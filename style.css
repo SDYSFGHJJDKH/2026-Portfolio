@@ -1,16 +1,44 @@
 body {
     background-color: #eddcf9;
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center;
 }
 
-#Hand {
-    display: flex;
-    justify-content: right;
+#main_container {
+   width: 1024px;
+   height: 3000px;
+    border: solid 1px black; 
 }
 
-#main_container {
-    border: solid 1px black;
+#Nav {
     width: 1024px;
-    height: 820px;
+    height: 110px;
+    border: solid 1px black; 
+    background-color: #cc97e8;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
+
+.Nav_item {
+    width: 180px;
+    height: 65px;
+    margin: 17px;
+    background-color: #eddcf9;
+    border: solid 5px #b75aa1;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #4e2267;
+}
+
