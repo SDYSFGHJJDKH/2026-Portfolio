@@ -65,6 +65,13 @@ h1 {
     padding: 0;
 } 
 
+/* #title {
+    width: 400px;
+    height: 377px;
+    border: solid 1px black; 
+    z-index: 8;
+} */
+
 #Mascot {
     width: 700px;
     height: 670px;
