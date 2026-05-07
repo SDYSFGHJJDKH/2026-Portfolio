@@ -100,3 +100,25 @@ h1 {
     justify-content: space-around;
 }
 
+#Nav-out {
+    width: 1024px;
+    height: 110px;
+    border: solid 1px black; 
+    background-color: #cc97e8;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#Page_title {
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: normal;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
