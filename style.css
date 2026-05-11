@@ -12,7 +12,7 @@ body {
    border: solid 1px black; 
 }
 
-#Nav {
+#nav {
     width: 1024px;
     height: 110px;
     border: solid 1px black; 
@@ -124,23 +124,57 @@ h1 {
 }
 
 #conditions {
-    width: 180px;
-    height: 65px;
+    width: 970px;
+    height: 330px;
     margin: 17px;
     background-color: #cc97e8;
-    border: solid 5px #b75aa1;
+    border: solid 10px #b75aa1;
+    border-radius: 13px;
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+}
+
+#contact {
+    width: 600px;
+    height: 460px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 10px #b75aa1;
     border-radius: 13px;
     z-index: 2;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
 #text {
-    width: 160px;
-    height: 45px;
+    width: 550px;
+    height: 415px;
     background-color: #eddcf9;
     border-radius: 13px;
     position: absolute;
     z-index: 3;
 }
+
+ #h1 { 
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+/* #contactimg {
+    width: 250px;
+    height: 350px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 10px #b75aa1;
+    border-radius: 13px;
+    z-index: 2;
+    position: absolute;
+} */
