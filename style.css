@@ -8,7 +8,7 @@ body {
 
 #main_container {
    width: 1024px;
-   height: 900px;
+   height: 1000px;
    border: solid 1px black; 
 }
 
@@ -135,9 +135,49 @@ h1 {
     font-weight: 300;
     font-style: normal;
     display: flex;
+    justify-content: center;
+}
+
+#text1 {
+    width: 925px;
+    height: 290px;
+    background-color: #eddcf9;
+    border-radius: 13px;
+    z-index: 3;
+    display: flex;
+    align-self: center;
+}
+
+#h12 {
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 1px;
 }
 
 #contact {
+    width: 970px;
+   height: 500px;
+   border: solid 1px black; 
+   display: flex;
+   justify-content: space-between;
+   align-self: center;
+   flex-direction: row-reverse;
+   margin: 17px;
+}
+
+#contactimg {
+    width: 250px;
+    height: 350px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 10px #b75aa1;
+    border-radius: 13px;
+    z-index: 4;
+}
+
+#information {
     width: 600px;
     height: 460px;
     margin: 17px;
@@ -155,7 +195,6 @@ h1 {
     height: 415px;
     background-color: #eddcf9;
     border-radius: 13px;
-    position: absolute;
     z-index: 3;
 }
 
@@ -168,13 +207,3 @@ h1 {
     justify-content: center;
 }
 
-/* #contactimg {
-    width: 250px;
-    height: 350px;
-    margin: 17px;
-    background-color: #cc97e8;
-    border: solid 10px #b75aa1;
-    border-radius: 13px;
-    z-index: 2;
-    position: absolute;
-} */
