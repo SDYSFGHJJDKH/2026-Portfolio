@@ -136,15 +136,15 @@ h1 {
     font-style: normal;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 #text1 {
-    width: 925px;
-    height: 290px;
+    width: 430px;
+    height: 280px;
     background-color: #eddcf9;
     border-radius: 13px;
     z-index: 3;
-    display: flex;
     align-self: center;
 }
 
