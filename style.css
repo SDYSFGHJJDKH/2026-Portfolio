@@ -207,3 +207,48 @@ h1 {
     justify-content: center;
 }
 
+#portfolio {
+   width: 970px;
+   height: 600px;
+   border: solid 1px black; 
+   display: flex;
+   align-self: center;
+   margin: 17px;
+   justify-content: center;
+}
+
+#container {
+    width: 790px;
+    height: 490px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 18px #b75aa1;
+    border-radius: 50px;
+    z-index: 2;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#images {
+    width: 465px;
+    height: 380px;
+    margin: 17px;
+    background-color: white;
+    border-radius: 25px;
+    z-index: 3;
+    display: flex;
+    align-self: center;
+}
+
+#arrows {
+    width: 90px;
+    height: 120px;
+    border-radius: 17px;
+    background-color: #eddcf9;
+    display: flex;
+    align-self: flex-end;
+    z-index: 4;
+    align-self: center;
+}
