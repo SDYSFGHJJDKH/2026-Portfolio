@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    z-index: 4;
 }
 
 .Nav_item {
@@ -39,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 6;
 }
 
 #title {
@@ -58,6 +60,8 @@ body {
     display: flex;
     justify-self: right;
     padding: 0;
+    position: relative;
+    border: solid red 1px;
 } 
 #Mascot {
     width: 700px;
@@ -65,16 +69,23 @@ body {
     display: flex;
     justify-self: flex-end;
     position: absolute;
-    z-index: 9;
+    z-index: 3;
 }
 
 #Hand {
     width: 370px;
     height: 370px;
-    position: absolute;
-    right: 234px;
-    top: 138px;
-    z-index: 11;
+    position: relative;
+    left: 160px;
+    top: 123px;
+    transform: rotate(-2deg);
+    transform: rotate(2deg);
+    transform: rotate(-1.5deg);
+    transform: rotate(0.5deg);
+    right: -20px;
+    z-index: 5;
+    border: red solid 1px;
+    
 }
 
 a {
@@ -98,6 +109,7 @@ h1 {
     display: flex;
     margin: auto;
     justify-content: space-around;
+    border: solid red 1px;
 }
 
 #Nav-out {
@@ -146,15 +158,29 @@ h1 {
     border-radius: 13px;
     z-index: 3;
     align-self: center;
+    border: red 1px solid;
+    
 }
 
-#h12 {
+.text-item {
+    border: red 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+/* #h12 {
     color: #4e2267;
     font-family: "cc-goth-chic", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin-top: 1px;
-}
+} */
 
 #contact {
     width: 970px;
@@ -252,3 +278,4 @@ h1 {
     z-index: 4;
     align-self: center;
 }
+
