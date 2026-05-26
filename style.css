@@ -153,19 +153,20 @@ h1 {
 
 #text1 {
     width: 430px;
-    height: 280px;
+    height: 250px;
     background-color: #eddcf9;
     border-radius: 13px;
     z-index: 3;
     align-self: center;
     border: red 1px solid;
-    
+    top: 100px;
 }
 
 .text-item {
     border: red 1px solid;
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 
 ul {
@@ -174,13 +175,15 @@ ul {
     /* justify-content: center; */
 }
 
-/* #h12 {
+#commission_details {
     color: #4e2267;
     font-family: "cc-goth-chic", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin-top: 1px;
-} */
+    position: absolute;
+    z-index: 4;
+}
 
 #contact {
     width: 970px;
