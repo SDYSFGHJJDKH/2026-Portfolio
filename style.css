@@ -27,12 +27,12 @@ body {
 }
 
 .Nav_item {
-    width: 180px;
-    height: 65px;
+    width: 170px;
+    height: 60px;
     margin: 17px;
     background-color: #eddcf9;
-    border: solid 6px #b75aa1;
-    border-radius: 13px;
+    border: solid 9px #b75aa1;
+    border-radius: 20px;
     color: #4e2267;
     font-family: "cc-goth-chic", sans-serif;
     font-weight: 300;
@@ -41,6 +41,13 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 6;
+    box-shadow: none;
+    transition-property: box-shadow;
+}
+
+.Nav_item:hover {
+    transition-property: box-shadow;
+    box-shadow: 0px 0px 5px 4px rgb(170, 122, 212) inset;
 }
 
 #title {
@@ -151,6 +158,16 @@ h1 {
     justify-content: space-evenly;
 }
 
+#commission_details {
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: -5px;
+    position: absolute;
+    z-index: 4;
+}
+
 #text1 {
     width: 430px;
     height: 250px;
@@ -173,16 +190,6 @@ ul {
     text-align: center;
     /* display: flex; */
     /* justify-content: center; */
-}
-
-#commission_details {
-    color: #4e2267;
-    font-family: "cc-goth-chic", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin-top: 1px;
-    position: absolute;
-    z-index: 4;
 }
 
 #contact {
