@@ -6,6 +6,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cbc7rez.css">
     <title>JC Portfolio</title>
+    <script>
+       let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("images");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
 </head>
 <body>
     
@@ -49,16 +76,24 @@
             </div>
         </nav>
 
-        <div id="portfolio">
-                <div id="container">
-                    <div id="arrows"></div>
-                    <div id="images"></div>
-                    <div id="arrows"></div>
-                </div>
-        </div>
-       
+    <div id="portfolio">
+               <!-- Container for the image gallery -->
+        <div class="container">
 
-    </div>
+            <!-- Full-width images with number text -->
+            <div class="images">
+                <img src="IMGs/Website-artwork_export_0006_Full-BG.png" style="width:100%">
+            </div>
+        
+            <div class="images">
+                <img src="IMGs/Mascot.png" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
 
 </body>
 </html>
