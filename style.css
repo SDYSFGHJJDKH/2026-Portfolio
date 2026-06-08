@@ -12,10 +12,13 @@ body {
    border: solid 1px black; 
 }
 
+/* Overarching css */
+
+/* Nav */
+
 #nav {
     width: 1024px;
-    height: 110px;
-    border: solid 1px black; 
+    height: 110px; 
     background-color: #cc97e8;
     margin-top: -140px;
     position: relative;
@@ -33,6 +36,7 @@ body {
     box-shadow: 0px 0px 5px 4px rgb(151, 100, 195) inset;
     z-index: 6;
     border-radius: 13px;
+    text-align: center;
 }
 
 .Nav_bg {
@@ -78,19 +82,16 @@ body {
     background-color: #993cb0df;
     border-radius: 13px;
     z-index: 5;
-    border: solid red 1px;
 }
 
 #Nav-out {
     width: 1024px;
     height: 110px;
-    border: solid 1px black; 
     background-color: #cc97e8;
     position: relative;
     z-index: 10;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
 }
 
 .Nav_item:hover {
@@ -99,10 +100,30 @@ body {
     height: 62px;
 }
 
+h1 {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#Page_title {
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: normal;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav end */
+
+/* Index */
+
 #title {
     width: 480px;
     height: 457px;
-    border: solid 1px black; 
     z-index: 9;
     display: flex;
     flex-direction: column;
@@ -112,12 +133,10 @@ body {
 #Header {
     width: 700px;
     height: 700px;
-    border: solid 1px black;
     display: flex;
     justify-self: right;
     padding: 0;
     position: relative;
-    border: solid red 1px;
 } 
 #Mascot {
     width: 700px;
@@ -140,7 +159,6 @@ body {
     transform: rotate(0.5deg);
     right: -20px;
     z-index: 5;
-    border: red solid 1px;
     
 }
 
@@ -148,40 +166,17 @@ a {
     text-decoration: none;
 }
 
-a:active {
+a:active,
+a:link {
     color:#4e2267
 }
 
-/* span { 
-    position:
-    width:180px;
-    height:65px;
-    top:0;
-    left: 0;
-    z-index: 1;
-} */
+/* Index end */
 
-h1 {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    /* border: solid red 1px; */
-}
-
-#Page_title {
-    color: #4e2267;
-    font-family: "cc-goth-chic", sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: normal;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
+/* Contact */
 
 #conditions {
     width: 970px;
-    height: 330px;
     margin: 17px;
     background-color: #cc97e8;
     border: solid 10px #b75aa1;
@@ -193,6 +188,7 @@ h1 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    padding: 60px 0 20px 0;
 }
 
 #commission_details {
@@ -200,57 +196,39 @@ h1 {
     font-family: "cc-goth-chic", sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin-top: -5px;
+    margin-top: -57px;
     position: absolute;
     z-index: 4;
 }
 
-#text1 {
+.text1 {
     width: 430px;
     height: 250px;
     background-color: #eddcf9;
     border-radius: 13px;
     z-index: 3;
     align-self: center;
-    border: red 1px solid;
-    top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
+    font-size: 20px;
 }
 
 .text-item {
-    border: red 1px solid;
     text-align: center;
+    margin-left: -35px;
 }
 
 ul {
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 #contact {
-    width: 970px;
+   width: 970px;
    height: 500px;
-   border: solid 1px black; 
    display: flex;
    justify-content: space-between;
    align-self: center;
    flex-direction: row-reverse;
    margin: 17px;
-}
-
-#contactimg {
-    width: 250px;
-    height: 350px;
-    margin: 17px;
-    background-color: #cc97e8;
-    border: solid 10px #b75aa1;
-    border-radius: 13px;
-    z-index: 4;
+   justify-content: center;
 }
 
 #information {
@@ -272,6 +250,16 @@ ul {
     background-color: #eddcf9;
     border-radius: 13px;
     z-index: 3;
+    font-size: 20px;
+}
+
+#text-item-1 {
+    text-align: center;
+    margin-left: -35px;
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
  #h1 { 
@@ -283,70 +271,77 @@ ul {
     justify-content: center;
 }
 
+/* Contact end */
+
+/* Portfolio */
+
 #portfolio {
    width: 800px;
    height: 600px;
-   border: solid 1px black; 
    display: flex;
    margin: 17px;
    justify-self: center;
    align-content: center;
+   overflow: hidden;
+   margin-top: 65px;
 }
 
 * {
     box-sizing: border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    width: 790px;
+    width: 100%;
     height: 490px;
+    height: 100%;
   }
   
   .images {
-    object-fit: cover;
-    width: 100%;
     height: 100%;
-    display: none;
-    background-image: url('IMGs/Website-artwork_export_0006_Full-BG.png');
-    background-image: url('IMGs/Mascot.png');
+    width: auto;
+    position: relative;
   }
 
-  /* Add a pointer when hovering over the thumbnail images */
+  .images img {
+    height: 100%;
+    display: block;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-self: center;
+  }
+
   .cursor {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
   .prev,
   .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    height: 100%;
+    top: 0;
+    padding: 30px;
     color: rgb(99, 0, 126);
     font-weight: bold;
     font-size: 50px;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-    display: flex;
-    /* onclick="button_click();" */
+    background-color: #cc97e8;
   }
   
-  /* Position the "next button" to the right */
+.prev span, .next span {
+    position: relative;
+    top: 45%;
+    width: 30px;
+    display: block;
+    left: auto;
+}
+
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
   }
   
   .row:after {
@@ -355,13 +350,11 @@ ul {
     clear: both;
   }
   
-  /* Six columns side by side */
   .column {
     float: left;
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
   }
@@ -370,3 +363,72 @@ ul {
   .demo:hover {
     opacity: 1;
   }
+
+  /* Portfolio end */
+
+  /* Pricing */
+
+  #conditions_Pricing {
+    width: 970px;
+    height: 500px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 10px #b75aa1;
+    border-radius: 13px;
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-self: center;
+}
+
+  .text1_Pricing {
+    width: 280px;
+    height: 400px;
+    border-radius: 13px;
+    z-index: 3;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Pricing_img {
+    width: 100%;
+    height: 100%;
+}
+
+#information_Pricing {
+    width: 970px;
+    height: 300px;
+    margin: 17px;
+    background-color: #cc97e8;
+    border: solid 10px #b75aa1;
+    border-radius: 13px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+
+#text_Pricing {
+    width: 290px;
+    height: 200px;
+    background-color: #eddcf9;
+    border-radius: 13px;
+    z-index: 3;
+}
+
+.text-item-2 {
+    color: #4e2267;
+    font-family: "cc-goth-chic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
